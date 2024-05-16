@@ -1,5 +1,7 @@
 /* Používáme intuitivní výpočet rozměrů prvků. */
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -8,7 +10,48 @@ html {
 }
 
 .container {
-  max-width: 20rem;
+  max-width: 100rem;
   margin-right: auto;
   margin-left: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #3b264d;
+}
+
+/* obecne styly pro elementy */
+p,
+h2,
+h4 {
+  text-align: center;
+  color: #ffffff;
+  display: block;
+}
+
+/* styly pro stránku O projektu*/
+
+.container_kojoradce {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+
+}
+
+.img_breastfeeding_mother {
+  max-width: 25%;
+}
+
+.user {
+  max-width: 50%;
+}
+
+.about_project {
+  text-align: justify;
+  max-width: 50%;
+  margin: auto;
 }
