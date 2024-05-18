@@ -108,3 +108,59 @@ a:hover {
   max-width: 50%;
   margin: auto;
 }
+
+
+/* o nas */
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.team__card {
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  width: 300px;
+}
+
+.team__card-image {
+  width: 70%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.team__card-title {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.team__card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.team__card-icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .team {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .team__card {
+      width: 90%;
+  }
+
+  .team__card-image {
+    width: 50%;
+  }
+}
