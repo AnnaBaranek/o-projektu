@@ -44,6 +44,12 @@ header {
 
 }
 
+.logo {
+  width: 2ex;
+  margin-bottom: 0;
+  color: inherit;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
