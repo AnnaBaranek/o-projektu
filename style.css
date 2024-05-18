@@ -1,12 +1,12 @@
-/* Používáme intuitivní výpočet rozměrů prvků. */
-*,
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 *:before,
 *:after {
   box-sizing: border-box;
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -19,6 +19,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #3b264d;
+  line-height: 1.6;
 }
 
 /* obecne styly pro elementy */
@@ -33,7 +34,6 @@ h4 {
 /* styly pro navigaci */
 
 header {
-
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -41,7 +41,6 @@ header {
   margin-bottom: 40px;
   background-color: #3b264d;
   box-shadow: 3px 4px 10px #00000040;
-
 }
 
 .logo {
@@ -57,14 +56,11 @@ ul {
   max-width: 600px;
   display: flex;
   align-items: center;
-
 }
 
 li {
   margin-bottom: 10px;
   margin-right: 20px;
-
-
 }
 
 a {
@@ -79,9 +75,6 @@ a:hover {
   color: #9c2780;
 }
 
-
-
-
 /* styly pro stránku O projektu*/
 
 .container_kojoradce {
@@ -91,7 +84,6 @@ a:hover {
   align-items: center;
   text-align: left;
   gap: 20px;
-
 }
 
 .img_breastfeeding_mother {
@@ -108,7 +100,6 @@ a:hover {
   max-width: 50%;
   margin: auto;
 }
-
 
 /* o nas */
 
@@ -152,15 +143,97 @@ a:hover {
 
 @media (max-width: 600px) {
   .team {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .team__card {
-      width: 90%;
+    width: 90%;
   }
 
   .team__card-image {
     width: 50%;
+  }
+}
+
+/* index */
+
+.container-form,
+.greet-container,
+.container-content {
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+}
+
+input {
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  color: white;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #9c2780;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: purple;
+}
+
+/* text, ktery se vlozi pomoci js po submitu jmena */
+
+.jsText {
+  margin: 30px; /* Adds space above and below the text */
+  padding: 20px; /* Adds space inside the text container */
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  line-height: 1.6;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
