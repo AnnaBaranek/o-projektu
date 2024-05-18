@@ -32,17 +32,9 @@ h4 {
 
 /* styly pro navigaci */
 
-.logo {
-
-  max-width: 200px;
-  height: auto;
-  padding-left: 10px;
-  padding-top: 0;
-  margin-top: 5px;
-
-}
-
 header {
+
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -65,7 +57,7 @@ ul {
 li {
   margin-bottom: 10px;
   margin-right: 20px;
-  display: flex;
+
 
 }
 
