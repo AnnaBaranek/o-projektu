@@ -77,15 +77,16 @@ a:hover {
 
 /* styly pro stránku O projektu*/
 
+
 h2 {
   font-family: "Playfair Display", serif;
-  font-size: 44px;
-  font-style: italic;
+  font-size: 42px;
+
 }
 
 p {
   font-family: "Raleway", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -109,7 +110,7 @@ p {
 
 .about_project {
   text-align: justify;
-  max-width: 50%;
+  max-width: 80%;
   margin: auto;
 }
 
