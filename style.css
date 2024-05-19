@@ -77,6 +77,18 @@ a:hover {
 
 /* styly pro stránku O projektu*/
 
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 44px;
+  font-style: italic;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
 .container_kojoradce {
   display: flex;
   flex-direction: column;
@@ -171,11 +183,11 @@ a:hover {
 }
 
 .container-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 form {
@@ -221,8 +233,10 @@ button:hover {
 /* text, ktery se vlozi pomoci js po submitu jmena */
 
 .jsText {
-  margin: 30px; /* Adds space above and below the text */
-  padding: 20px; /* Adds space inside the text container */
+  margin: 30px;
+  /* Adds space above and below the text */
+  padding: 20px;
+  /* Adds space inside the text container */
   text-align: center;
   opacity: 0;
   animation: fadeIn 2s forwards;
@@ -233,6 +247,7 @@ button:hover {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
