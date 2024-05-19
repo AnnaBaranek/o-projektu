@@ -78,38 +78,38 @@ a:hover {
 /* styly pro stránku O projektu*/
 
 
-h2 {
+.title_kojoradce {
   font-family: "Playfair Display", serif;
-  font-size: 42px;
-
+  font-size: 40px;
+  font-style: italic;
 }
 
 p {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
-  line-height: 1.5;
 }
 
 .container_kojoradce {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: left;
   gap: 20px;
 }
 
 .img_breastfeeding_mother {
-  max-width: 25%;
+  max-width: 80%;
 }
 
 .user {
-  max-width: 50%;
+  max-width: 65%;
   border-radius: 3%;
 }
 
 .about_project {
-  text-align: justify;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column-reverse;
+  text-align: center;
   max-width: 80%;
   margin: auto;
 }
